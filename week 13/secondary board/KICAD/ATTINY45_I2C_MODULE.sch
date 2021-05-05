@@ -1,0 +1,411 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L fab:ATTINY45SI M7
+U 1 1 608DB39D
+P 5135 2740
+F 0 "M7" H 4785 3105 45  0000 C CNN
+F 1 "ATTINY45SI" H 5135 2740 45  0001 L BNN
+F 2 "fab:fab-SOIC-8_3.9x4.9mm_P1.27mm" H 5165 2890 20  0001 C CNN
+F 3 "" H 5135 2740 50  0001 C CNN
+	1    5135 2740
+	1    0    0    -1  
+$EndComp
+Text GLabel 3035 2840 0    50   Input ~ 0
+GND
+Text GLabel 6535 2540 2    50   Input ~ 0
+VCC
+$Comp
+L fab:AVRISPSMD M8
+U 1 1 608DF1A3
+P 5725 3955
+F 0 "M8" H 5823 4309 45  0000 C CNN
+F 1 "AVRISPSMD" H 5823 4225 45  0000 C CNN
+F 2 "fab:fab-2X03SMD" H 5755 4105 20  0001 C CNN
+F 3 "" H 5725 3955 50  0001 C CNN
+	1    5725 3955
+	1    0    0    -1  
+$EndComp
+Text GLabel 6165 3955 2    50   Input ~ 0
+MOSI
+Text GLabel 6195 4055 2    50   Input ~ 0
+GND
+Text GLabel 5380 3850 0    50   Input ~ 0
+MISO
+Text GLabel 5350 3955 0    50   Input ~ 0
+SCK
+Text GLabel 5335 4055 0    50   Input ~ 0
+RESET
+Text GLabel 5305 1845 2    50   Input ~ 0
+MISO
+Text GLabel 6870 2440 2    50   Input ~ 0
+SCL
+Wire Wire Line
+	5625 3855 5385 3855
+Wire Wire Line
+	5385 3855 5380 3850
+Wire Wire Line
+	5925 3955 6165 3955
+Wire Wire Line
+	5925 4055 6195 4055
+Wire Wire Line
+	5925 3855 6200 3855
+Text GLabel 6200 3855 2    50   Input ~ 0
+VCC
+Wire Wire Line
+	5350 3955 5625 3955
+Wire Wire Line
+	5335 4055 5625 4055
+Text GLabel 3035 2540 0    50   Input ~ 0
+RESET
+$Comp
+L fab:PINHD-1x03-SMD-HEADER M2
+U 1 1 608E4FFE
+P 1895 3225
+F 0 "M2" H 1895 3225 45  0001 C CNN
+F 1 "PINHD-1x03-SMD-HEADER" H 1895 3225 45  0001 C CNN
+F 2 "fab:fab-1X03SMD" H 1925 3375 20  0001 C CNN
+F 3 "" H 1895 3225 50  0001 C CNN
+	1    1895 3225
+	1    0    0    -1  
+$EndComp
+Text Notes 4795 3510 0    50   ~ 0
+Programming\n
+Wire Notes Line
+	4710 3280 6570 3280
+Wire Notes Line
+	6570 3280 6570 4490
+Wire Notes Line
+	6570 4490 4710 4490
+Wire Notes Line
+	4710 4490 4710 3280
+Text GLabel 1895 2925 0    50   Input ~ 0
+SERVO
+Text GLabel 1895 2825 0    50   Input ~ 0
+POWERLINE
+Text GLabel 1895 2725 0    50   Input ~ 0
+GND
+$Comp
+L fab:PINHD-1x02-SMD-HEADER M1
+U 1 1 608E8C78
+P 1945 2700
+F 0 "M1" H 1945 2700 45  0001 C CNN
+F 1 "PINHD-1x02-SMD-HEADER" H 1945 2700 45  0001 C CNN
+F 2 "fab:fab-1X02SMD" H 1975 2850 20  0001 C CNN
+F 3 "" H 1945 2700 50  0001 C CNN
+	1    1945 2700
+	1    0    0    -1  
+$EndComp
+Text GLabel 1545 2300 0    50   Input ~ 0
+LED
+Text Notes 1395 1950 0    50   ~ 0
+Outputs\n
+Wire Notes Line
+	1330 1750 2280 1750
+Wire Notes Line
+	2280 1750 2280 3205
+Wire Notes Line
+	2280 3205 1285 3205
+Wire Notes Line
+	1285 3205 1285 1745
+Wire Notes Line
+	1330 1745 1330 1750
+Wire Notes Line
+	1285 1745 1330 1745
+Text Notes 3270 3965 0    50   ~ 0
+Power Line\n
+$Comp
+L fab:PINHD-1x02-HEADER M5
+U 1 1 608EC3A3
+P 3200 4675
+F 0 "M5" H 3200 4675 45  0001 C CNN
+F 1 "PINHD-1x02-HEADER" H 3200 4675 45  0001 C CNN
+F 2 "fab:fab-1X02" H 3230 4825 20  0001 C CNN
+F 3 "" H 3200 4675 50  0001 C CNN
+	1    3200 4675
+	1    0    0    -1  
+$EndComp
+Text GLabel 3200 4175 0    50   Input ~ 0
+GNDLINE
+Text GLabel 3200 4275 0    50   Input ~ 0
+POWERLINE
+$Comp
+L fab:PINHD-1x02-HEADER M6
+U 1 1 608ED4F9
+P 4065 4665
+F 0 "M6" H 4065 4665 45  0001 C CNN
+F 1 "PINHD-1x02-HEADER" H 4065 4665 45  0001 C CNN
+F 2 "fab:fab-1X02" H 4095 4815 20  0001 C CNN
+F 3 "" H 4065 4665 50  0001 C CNN
+	1    4065 4665
+	1    0    0    -1  
+$EndComp
+Text GLabel 4065 4165 0    50   Input ~ 0
+GNDLINE
+Text GLabel 4065 4265 0    50   Input ~ 0
+POWERLINE
+Text Notes 3030 4065 0    50   ~ 0
+IN\n
+Text Notes 3805 4040 0    50   ~ 0
+OUT\n
+Wire Notes Line
+	2635 3835 4440 3835
+Wire Notes Line
+	4440 3955 4440 4500
+Wire Notes Line
+	2620 4500 2620 3950
+Wire Notes Line
+	2620 3950 2630 3950
+Text GLabel 5250 1975 2    50   Input ~ 0
+SERVO
+Wire Wire Line
+	6530 2740 6535 2740
+Wire Wire Line
+	6530 2840 6535 2840
+Connection ~ 6535 2840
+Wire Wire Line
+	6535 2840 6735 2840
+Text Notes 4800 3620 0    50   ~ 0
+ISP\n
+Text Notes 1390 2585 0    50   ~ 0
+SERVO\n
+Text Notes 1395 2080 0    50   ~ 0
+LED\n
+Text Notes 1355 3475 0    50   ~ 0
+I2C MODULE CONNECTION\n
+Wire Notes Line
+	2285 4565 1305 4565
+Wire Notes Line
+	1305 4565 1305 3305
+Wire Notes Line
+	1305 3305 1280 3305
+Text Notes 2495 1860 0    50   ~ 0
+ATTINY 45 I2C MODULE\n
+$Comp
+L fab:CAP-UNPOLARIZED C1
+U 1 1 608FF625
+P 3540 3670
+F 0 "C1" H 3490 3884 45  0000 C CNN
+F 1 "1 UF" H 3490 3800 45  0000 C CNN
+F 2 "fab:fab-C1206" H 3570 3820 20  0001 C CNN
+F 3 "" H 3540 3670 50  0001 C CNN
+	1    3540 3670
+	1    0    0    -1  
+$EndComp
+Text GLabel 3340 3670 0    50   Input ~ 0
+GND
+Text GLabel 3640 3670 2    50   Input ~ 0
+VCC
+Wire Notes Line
+	2625 3945 2625 3270
+Wire Notes Line
+	2625 3270 4440 3270
+Wire Notes Line
+	4440 3270 4440 3950
+Wire Notes Line
+	1130 1560 7235 1560
+Wire Notes Line
+	7235 4755 1130 4755
+Wire Notes Line
+	1130 1560 1130 4755
+Wire Notes Line
+	7245 1560 7245 4755
+Text GLabel 6870 2555 2    50   Input ~ 0
+SCK
+Wire Wire Line
+	6800 2440 6870 2440
+Wire Wire Line
+	6870 2555 6800 2555
+Wire Wire Line
+	6800 2555 6800 2550
+Text GLabel 6565 2030 2    50   Input ~ 0
+SDA
+Text GLabel 3035 2740 0    50   Input ~ 0
+LED
+$Comp
+L fab:PINHD-2X2-SMD M3
+U 1 1 60909560
+P 1835 3945
+F 0 "M3" H 1785 4299 45  0000 C CNN
+F 1 "PINHD-2X2-SMD" H 1785 4215 45  0000 C CNN
+F 2 "fab:fab-2X02SMD" H 1865 4095 20  0001 C CNN
+F 3 "" H 1835 3945 50  0001 C CNN
+	1    1835 3945
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2290 4560 2375 4560
+Wire Notes Line
+	2375 4560 2375 3310
+Wire Notes Line
+	1290 3310 2375 3310
+Text GLabel 1635 3845 0    50   Input ~ 0
+GND
+Text GLabel 1635 3945 0    50   Input ~ 0
+VCC
+Text GLabel 1935 3845 2    50   Input ~ 0
+SDA
+Text GLabel 1935 3945 2    50   Input ~ 0
+SCL
+$Comp
+L fab:RES-US1206FAB R1
+U 1 1 6090E605
+P 1745 2300
+F 0 "R1" H 1745 2494 45  0000 C CNN
+F 1 "220 Ω" H 1745 2410 45  0000 C CNN
+F 2 "fab:fab-R1206FAB" H 1775 2450 20  0001 C CNN
+F 3 "" H 1745 2300 50  0001 C CNN
+	1    1745 2300
+	1    0    0    -1  
+$EndComp
+Text GLabel 1945 2200 0    50   Input ~ 0
+GND
+Text GLabel 3440 4465 0    50   Input ~ 0
+GND
+Text GLabel 3575 4460 2    50   Input ~ 0
+GNDLINE
+Wire Notes Line
+	2615 4500 2615 4625
+Wire Notes Line
+	2615 4625 4445 4625
+Wire Notes Line
+	4445 4625 4445 4500
+Wire Notes Line
+	4445 4500 4435 4500
+$Comp
+L fab:RES-US1206FAB R2
+U 1 1 6091A178
+P 6350 1870
+F 0 "R2" H 6350 2064 45  0000 C CNN
+F 1 "0Ω" H 6350 1980 45  0000 C CNN
+F 2 "fab:fab-R1206FAB" H 6380 2020 20  0001 C CNN
+F 3 "" H 6350 1870 50  0001 C CNN
+	1    6350 1870
+	1    0    0    -1  
+$EndComp
+Text GLabel 6550 1870 2    50   Input ~ 0
+MOSI
+$Comp
+L fab:RES-US1206FAB R3
+U 1 1 6092049A
+P 6365 2030
+F 0 "R3" H 6365 2224 45  0000 C CNN
+F 1 "0Ω" H 6365 2140 45  0000 C CNN
+F 2 "fab:fab-R1206FAB" H 6395 2180 20  0001 C CNN
+F 3 "" H 6365 2030 50  0001 C CNN
+	1    6365 2030
+	1    0    0    -1  
+$EndComp
+Text GLabel 6735 2840 2    50   Input ~ 0
+MOSISDA
+Text GLabel 6155 1865 0    50   Input ~ 0
+MOSISDA
+Wire Wire Line
+	6155 1865 6150 1865
+Wire Wire Line
+	6150 1865 6150 1870
+Text GLabel 5075 1905 0    50   Input ~ 0
+MISOSERVO
+Text GLabel 6535 2740 2    50   Input ~ 0
+MISOSERVO
+Wire Wire Line
+	5075 1905 5175 1905
+Wire Wire Line
+	5175 1905 5175 1850
+Wire Wire Line
+	5175 1850 5305 1850
+Wire Wire Line
+	5305 1850 5305 1845
+Wire Wire Line
+	5250 1975 5175 1975
+Wire Wire Line
+	5175 1975 5175 1905
+Connection ~ 5175 1905
+Wire Wire Line
+	6530 2640 6535 2640
+Wire Wire Line
+	6815 2640 6815 2550
+Wire Wire Line
+	6815 2550 6800 2550
+Connection ~ 6535 2640
+Wire Wire Line
+	6535 2640 6815 2640
+Connection ~ 6800 2550
+Wire Wire Line
+	6800 2550 6800 2440
+$Comp
+L fab:RES-US1206FAB R4
+U 1 1 60932FD5
+P 5485 2275
+F 0 "R4" H 5485 2469 45  0000 C CNN
+F 1 "0 Ω" H 5485 2385 45  0000 C CNN
+F 2 "fab:fab-R1206FAB" H 5515 2425 20  0001 C CNN
+F 3 "" H 5485 2275 50  0001 C CNN
+	1    5485 2275
+	1    0    0    -1  
+$EndComp
+Text GLabel 5285 2275 0    50   Input ~ 0
+MOSI
+Text GLabel 5685 2275 2    50   Input Italic 0
+SDA
+$Comp
+L fab:RES-US1206FAB R5
+U 1 1 60936C1C
+P 6450 2265
+F 0 "R5" H 6450 2459 45  0000 C CNN
+F 1 "0 Ω" H 6450 2375 45  0000 C CNN
+F 2 "fab:fab-R1206FAB" H 6480 2415 20  0001 C CNN
+F 3 "" H 6450 2265 50  0001 C CNN
+	1    6450 2265
+	1    0    0    -1  
+$EndComp
+Text GLabel 6250 2265 0    50   Input Italic 0
+GND
+Text GLabel 6650 2265 2    50   Input Italic 0
+GND
+$Comp
+L fab:RES-US1206FAB R6
+U 1 1 60941ADF
+P 4090 2240
+F 0 "R6" H 4090 2434 45  0000 C CNN
+F 1 "0 Ω" H 4090 2350 45  0000 C CNN
+F 2 "fab:fab-R1206FAB" H 4120 2390 20  0001 C CNN
+F 3 "" H 4090 2240 50  0001 C CNN
+	1    4090 2240
+	1    0    0    -1  
+$EndComp
+Text GLabel 3890 2240 0    50   Input ~ 0
+RESET
+Text GLabel 4290 2240 2    50   Input Italic 0
+RESET
+Text GLabel 6165 2030 0    50   Input ~ 0
+MOSI
+Wire Wire Line
+	3440 4465 3575 4465
+Wire Wire Line
+	3575 4465 3575 4460
+$Comp
+L MCU_Microchip_ATtiny:ATtiny45V-10SU U1
+U 1 1 609578F8
+P 3040 5840
+F 0 "U1" H 2510 5886 50  0000 R CNN
+F 1 "ATtiny45V-10SU" H 2510 5795 50  0000 R CNN
+F 2 "Package_SO:SOIJ-8_5.3x5.3mm_P1.27mm" H 3040 5840 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microcontroller-attiny25-attiny45-attiny85_datasheet.pdf" H 3040 5840 50  0001 C CNN
+	1    3040 5840
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
